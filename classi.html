@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="ja" data-ng-app="defaultApp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>ホーム</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- Basic Styles -->
+<link rel="stylesheet" type="text/css" href="/assets/jgs/css/bootstrap-reset.css">
+<link rel="stylesheet" type="text/css" href="/assets/jgs/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/assets/jgs/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/assets/jgs/css/smartadmin-reset.css">
+    <link rel="stylesheet" type="text/css" href="/assets/jgs/css/smartadmin-production.css">
+    <link rel="stylesheet" type="text/css" href="/assets/jgs/css/smartadmin-skins.css">
+<link rel="stylesheet" type="text/css" href="/assets/jgs/css/library/introjs.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/jgs/css/library/luminous-basic.1.0.1.min.css">
+
+<!-- SmartAdmin RTL Support is under construction-->
+<link rel="stylesheet" type="text/css" href="/assets/jgs/css/smartadmin-rtl.min.css">
+<!-- Styles for BEAM -->
+<link rel="stylesheet" type="text/css" href="/assets/jgs/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/assets/jgs/css/components.css">
+<link rel="stylesheet" type="text/css" href="/assets/jgs/css/main_style.css">
+
+<!-- FAVICONS -->
+<link rel="shortcut icon" href="https://platform.classi.jp/assets/jgs/img/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://platform.classi.jp/assets/jgs/img/favicon/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="https://platform.classi.jp/assets/jgs/img/favicon/icon.png" />
+
+</head>
+<body class="index bg" data-ng-controller="SmartAppController">
+<!-- POSSIBLE CLASSES: minified, fixed-ribbon, fixed-header, fixed-width, top-menu
+			 You can also add different skin classes such as "smart-skin-0", "smart-skin-1" etc...-->
+
+<!-- HEADER -->
+<header id="header">
+  <div class="inner">
+    <h1>ホーム</h1>
+    <nav>
+      <ul class="gNavi">
+        <li class="home">
+          <a href="/">Classi</a>
+        </li>
+                  <li class="user pc">
+            <a class="student" href="javascript:void(0);" ng-non-bindable>森田 啓介 </a>
+          </li>
+              </ul>
+              <p class="menu pc"><span class="schoolname">西大和学園高等学校</span></p>
+          </nav>
+  </div>
+</header>
+<!-- END HEADER -->
+<section class="upperMain clearfix">
+    <!-- <h2>タブ（大・ツールバー）</h2> -->
+
+
+    <div role="content">
+        <!-- end widget edit box -->
+        <!-- widget content -->
+    </div>
+</section>
+<section class="upperMain bgSameBody">
+    <div class="dateBox mb30">
+        <div class="innerBl text-center margin-bottom-0">
+                        <span class="date">2022年</span>
+            <span class="font-xl">7</span><span class="font-md">月</span>
+            <span class="font-xl">12</span><span class="font-md">日（火）</span>
+                        <a href="/notification" class="btnMore">
+                <span class="infoBl">
+                    <span class="info">
+                        <span class="ttlH4">
+                            お知らせ<i class="fa fa-bell"></i>
+                        </span>
+                                            </span>
+                </span>
+            </a>
+            <span class="logInOut">
+                <form action="https://auth.classi.jp/logout" method="post">
+                    <button type="submit" class="btn btn-primary btn-default" id="logout"><i
+                    class="fa fa-sign-out"></i>ログアウト</button>
+                </form>
+            </span>
+        </div>
+    </div>
+</section>
+<!-- END NAVIGATION -->
+<!-- MAIN PANEL -->
+<div id="main" role="main">
+        <!-- MAIN CONTENT -->
+    <div id="content" data-ng-view="" class="view-animate">
+        <article id="pageContents">
+            <div class="wrapper">
+                <section class="baseSec mb20">
+                    <div id="content2" data-ng-view="" class="view-animate">
+                        <article id="pageContents2">
+                            <div class="wrapper">
+
+                                                                <section class="baseSec infoGroup">
+
+
+                                                                                        </table>
+                                        </div>
+                                    </div>
+
+                                </section>
+                                <section class="baseSec mb20">
+                                    <h2 class="mt40">メインメニュー</h2>
+                                    <ul class="mainMenu clearfix">
+                                                                                    <li class="btn01">
+                                                <a href="https://karte.classi.jp/student/"
+                                                    >
+                                                    <img src="https://cdn.classi.jp/assets/images/menu_icons/icon_mainmenu_02.png" alt="">
+                                                    <span class="menuTxt">成績カルテ</span></a>
+                                                </li>
+                                                                                    <li class="btn02">
+                                                <a href="https://platform.classi.jp/questionnaire"
+                                                    >
+                                                    <img src="https://cdn.classi.jp/assets/images/menu_icons/icon_mainmenu_04.png" alt="">
+                                                    <span class="menuTxt">アンケート</span></a>
+                                                <span class="badge bg-color-red lg"><i class="fa fa-exclamation"></i></span></li>
+                                                                                    <li class="btn03">
+                                                <a href="https://platform.classi.jp/group2/"
+                                                    >
+                                                    <img src="https://cdn.classi.jp/assets/images/menu_icons/icon_mainmenu_10.png" alt="">
+                                                    <span class="menuTxt">校内グループ</span></a>
+                                                </li>
+                                                                                    <li class="btn04">
+                                                <a href="https://setting.classi.jp/"
+                                                    >
+                                                    <img src="https://cdn.classi.jp/assets/images/menu_icons/icon_mainmenu_13.png" alt="">
+                                                    <span class="menuTxt">設定・登録</span></a>
+                                                </li>
+                                                                                    <li class="btn05">
+                                                <a href="https://platform.classi.jp/guide"
+                                                    >
+                                                    <img src="https://cdn.classi.jp/assets/images/menu_icons/icon_mainmenu_14.png" alt="">
+                                                    <span class="menuTxt">ご利用ガイド</span></a>
+                                                </li>
+                                                                            </ul>
+                                </section>
+                            </div>
+                            <!-- /.wrapper -->
+                        </article>
+                        <!-- /#pageContents -->
+                    </div>
+                </section>
+            </div>
+        </article>
+    </div>
+    <!-- /#content -->
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN PANEL -->
+</div>
+<!-- END MAIN PANEL -->
+<div class="page-footer">
+  <span data-ng-include=""></span>
+  <div class="inner">
+    <nav>
+      <ul class="naviFooter fa-ul">
+        <li>
+          <i class="fa-li fa fa-caret-right"></i>
+            <a href="https://support.classi.jp/hc/ja" target="_blank" rel="noopener noreferrer">ヘルプページ</a>
+        </li>
+                  <li>
+            <i class="fa-li fa fa-caret-right"></i>
+            <a href="https://auth.classi.jp/parents/notice" target="_blank">利用に関する注意事項</a>
+          </li>
+          <li>
+            <i class="fa-li fa fa-caret-right"></i>
+            <a href="https://auth.classi.jp/students/notice" target="_blank">利用に関する注意事項(生徒)</a>
+          </li>
+              </ul>
+    </nav>
+  </div>
+  <p class="copy"><small>Copyright &copy; Classi Corp. All Rights Reserved.</small></p>
+</div>
+
+    <script src="https://cdn.classi.jp/assets/vendor/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.classi.jp/assets/vendor/jquery/jquery-ui-1.12.1.min.js"></script>
+    <script>
+        // CDNから取得できないときにplatform.classi.jpから取得するためのfallback処理
+        // 学校によってはアクセスフィルターでアクセスできないようにしていることもあるためいれている
+        // なお、jQueryUIだけ読み込まれているケースは考慮しない
+        if (!window.jQuery) {
+            document.write('<script src="https://platform.classi.jp/assets/jgs/js/libs/jquery-3.5.1.min.js"><\/script>');
+            document.write('<script src="https://platform.classi.jp/assets/jgs/js/libs/jquery-ui-1.12.1.min.js"><\/script>');
+        }
+    </script>
+<!-- AngularJS -->
+<script src="/assets/jgs/js/libs/lodash.underscore.min.js"></script>
+<script src="/js/new-angular-vendor.min.js"></script>
+<script src="/js/angular-vendor.min.js"></script>
+<script src="/assets/jgs/js/libs/localStorage.js"></script>
+
+<!-- サーバーからJSに渡す変数 -->
+<script>
+    var user_type = 3;
+    var is_student = 3;
+    var login_user_id = 6659643;
+    var login_user_name = '森田 啓介 保護者';
+    var classi_type = '1';
+    var base_url = 'https://platform.classi.jp/';
+    var karte_url = '';
+    var teaching_logs_url = 'https://study.classi.jp/';
+    var document_url = 'https://karte.classi.jp/apps/#/document/';
+    var settings_url = 'https://setting.classi.jp/';
+    var lesson_logs_url = 'https://lesson.classi.jp/apps/#/coursework/';
+</script>
+
+<!-- JSやCSSを読み込むfooterの出し分け -->
+<!-- Sentry -->
+  <script>
+    Sentry.init({
+        dsn: "https://eba55d38dd1d4504ac8e3114da018f89@o53397.ingest.sentry.io/114246",
+        environment: "production",
+        ignoreErrors: [
+          "removeAllHighlights",
+          "removeAllHighlightsForSB",
+          "window.webkit.messageHandlers.selectedDebugHandler.postMessage",
+          "ResizeObserver loop limit exceeded",
+          "window.onorientationchange is not a function",
+          "onSvFinishLoading",
+          "SymBrowser",
+          "instantSearchSDKJSBridgeClearHighlight",
+          "Possibly unhandled rejection: Transition cancelled",
+          // 回答済みアンケートの400エラーは送信しない
+          /Http failure response for (https:\/\/[^/]*\.classi\.jp)?\/api\/questionnaire\/examination\/\d+\/\d+\/info: 400 Bad Request/,
+          /Http failure response for (https:\/\/[^/]*\.classi\.jp)?\/api\/questionnaire\/examination\/\d+\/\d+\/info: 404 Not Found/,
+          /Http failure response for (https:\/\/[^/]*\.classi\.jp)?\/api\/questionnaire\/examination\/\d+\/answer\/header\/create: 404 Not Found/,
+          "c.draggable is not a function",
+          "d.droppable is not a function"
+        ],
+        beforeSend: function (event, hint) {
+          if (location.protocol === "file:") {
+            return null;
+          }
+          var message = (hint.originalException && hint.originalException.message) || event.message || '';
+          var regexps = [
+            /Failed to load template: .* \(HTTP status: -1 /,
+            /Possibly unhandled rejection: .*"status":(-1|401),.*/,
+            /Uncaught \(in promise\):.*"status":(0|401),.*/,
+            /Http failure response for .*: (0|401) /
+          ];
+          for (var i = 0; i < regexps.length; i++) {
+            if (message.match(regexps[i])) {
+              var breadcrumbs = event.breadcrumbs || [];
+              var statusCode = null;
+              var url = null;
+              for (var j = 0; j < breadcrumbs.length; j++) {
+                if (breadcrumbs[j].category === 'xhr') {
+                  var _statusCode = breadcrumbs[j].data.status_code;
+                  if (_statusCode === 0 || _statusCode === -1 || _statusCode === 401) {
+                    statusCode = _statusCode;
+                    url = breadcrumbs[j].data.url;
+                  }
+                }
+              }
+              if (ga && url && (statusCode === 0 || statusCode === -1)) {
+                ga('send', 'event', 'network error', url);
+                return null;
+              }
+              if (ga && url && statusCode === 401) {
+                if (breadcrumbs.length > 0) {
+                  var duration = breadcrumbs[breadcrumbs.length - 1].timestamp - breadcrumbs[0].timestamp;
+                  ga('send', 'event', 'session expired', url, duration);
+                  return null;
+                }
+              }
+            }
+          }
+          if (message.indexOf('BizBrowser') > -1) {
+            for (var i = 0; i < document.scripts.length; i++) {
+              var src = document.scripts[i].src;
+              var text = document.scripts[i].innerHTML;
+              if (src === '' && text.indexOf('BizBrowser') > -1) {
+                Sentry.captureMessage(text.substring(0, 1024));
+              }
+            }
+          }
+          return event;
+        }
+    });
+    Sentry.configureScope(function (scope) {
+      scope.setUser({"id": "6659643"});
+      scope.setTag("user_type", "3");
+      scope.setTag("school_id", "213");
+    });
+  </script>
+
+<script>
+  var login_user_school_id = 213;
+  var login_user_school_name = '西大和学園';
+</script>
+<!--================================================== -->
+<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)
+        <script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>-->
+<script src="/assets/jgs/js/app.config.js"></script>
+<script src="/assets/jgs/js/ng/ng.controllers.js"></script>
+<script src="/assets/jgs/js/classi/home/default.app.js"></script>
+
+
+
+<script src="/assets/jgs/js/libs/intro.min.js"></script>
+<script src="/assets/jgs/js/libs/footerFixed.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];
+a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+// New Google Analytics code to set User ID.
+ga('create', 'UA-49329670-6', { 'userId': '6659643' });
+ga('set', {
+    'dimension1' : 3,
+    'dimension2' : '29414_西大和学園',
+    'dimension3' : '西大和学園高等学校',
+    'dimension4' : 6659643,
+    'dimension5' : 1,
+    'dimension6' : 0,
+    'dimension7' : 0,
+    'dimension8' : 0,
+    'dimension9' : 0,
+    'dimension10': '',
+    'dimension11': '',
+    'dimension12': '213',
+    'dimension13': '2',
+    'dimension14': '2',
+    'dimension15': ''
+});
+</script>
+<script>
+  dataLayer = [{
+    'user_id': 6659643,
+    'user_type_id': 3,
+    'user_type_name': '保護者',
+    'teacher_role_id': '',
+    'teacher_role_name': '',
+    'school_id': 213,
+    'school_name': '西大和学園',
+    'benesse_school_id': '29414',
+    'head_school_code': '29414_西大和学園',
+    'school_stage_id': '2',
+    'school_stage_name': '高等学校',
+    'classi_type': 1,
+    'usage_type1': 0,
+    'usage_type2': 0,
+    'usage_type3': 0  }];
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-59FNT2Z');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HL31589QFN&l=gDataLayer"></script>
+<script>
+    window.gDataLayer = window.gDataLayer || [];
+    function gtag() {gDataLayer.push(arguments);}
+
+    gtag('js', new Date());
+    gtag('config', 'G-HL31589QFN');
+    gtag('set', 'user_properties', {
+        user_id: '6659643',
+        user_type_id: '3',
+        user_type_name: '保護者',
+        teacher_role_id: '',
+        teacher_role_name: '',
+        school_id: '213',
+        school_name: '西大和学園',
+        benesse_school_id: '29414',
+        school_stage_id: '2',
+        school_stage_name: '高等学校',
+        grade_code: '',
+        grade_id: '',
+        grade_name: '',
+        classroom_id: '',
+        classroom_name: '',
+        classi_type: '1',
+        usage_type1: '0',
+        usage_type2: '0',
+        usage_type3: '0'
+    });
+</script>
+
+<script src="/assets/jgs/js/common/native-interface.js"></script>
+<script src="/assets/jgs/js/common/androidPatch.js"></script>
+</body>
+</html>
